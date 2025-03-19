@@ -15,16 +15,23 @@
     font-family: sans-serif;
     font-size: 100%;
     margin: 0;
+    /* 13.2 add background image */
+    background-image: url('images/bg-image-transparent.png');
   }
 
   .content {
-    margin: 0 10%;
+    background-color: #E5E3CF; 
+    margin: 0 9%;
+  }
+
+  .divider {
+    border-top: 1px solid #69876f; 
+    margin: 20px 0;
   }
 
   h1 {
     text-align: center;
     text-transform: uppercase; 
-    border-bottom: 1px solid #69876f; 
     margin-top: 30px;
 
     /* 12.1 add font */
@@ -51,6 +58,21 @@
   }
   .climb-submit{
     margin-left: 20px;
+  }
+
+  .nav {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: #69876f;
+    margin: 0 10px;
+  }
+
+  .nav a:visited {
+    color: #69876f;
   }
 
   /* 12.5 add selection styles */
@@ -87,6 +109,13 @@
 <body>
   <div class='content'>
     <h1> <img src='logo.png' alt='logo' style="width: 100px;height:100px;"> <br>Crux Compass </h1>
+    <div class=nav>
+      <a href="index.html">Home</a> | 
+      <a href="crux_news.html">News</a> | 
+      <a href="responsivegallery/responsivegallery.html">Gallary</a> | 
+      <a href="route.html">Submit your send!</a> 
+    </div>
+    <div class="divider"></div>
 
     <h2> The Climbing Hub </h2>
     <p>
