@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Submit Your Climb | Crux Compass</title>
+  <style>
+    body {
+      background-color: #E5E3CF;
+      margin: 0 10%;
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      font-family: serif;
+      text-transform: uppercase;
+      border-bottom: 1px solid #69876f;
+      padding-bottom: 10px;
+    }
+    form {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    legend {
+      font-weight: bold;
+      padding: 0 5px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .checkbox-group, .radio-group {
+      margin-left: 20px;
+    }
+    .checkbox-item, .radio-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 5px;
+    }
+    /* Inline style for the attempts row (radio plus number input) */
+    .attempts-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+    .attempts-row input[type="number"] {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1><a href="index.html"><img src='logo.png' alt='logo' style="width: 100px;height:100px;"></a> Crux Compass</h1>
+  <h1>Submit Your Climb</h1>
+  <p>
+    Share your latest climbing adventure with us! Fill out the form below with details about your climb including your name, the route, location, number of attempts, proposed grade, and more.
+  </p>
+
+  <!-- Form for Climb Submission -->
+  <form action="submitClimb.php" method="POST">
+    <!-- Your Information Fieldset -->
+    <fieldset>
+      <legend>Your Information</legend>
+      <ul>
+        <li>
+          <label for="climberName">Climber Name:</label>
+          <input type="text" id="climberName" name="climberName" required>
+        </li>
+        <li>
+          <label for="routeName">Route Name:</label>
+          <input type="text" id="routeName" name="routeName" required>
+        </li>
+        <li>
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" placeholder="e.g., Yosemite, Red River Gorge" required>
+        </li>
+      </ul>
+    </fieldset>
+
+    <!-- Climb Details Fieldset -->
+    <fieldset>
+      <legend>Climb Details</legend>
+      <ul>
+        <!-- Attempts Fieldset -->
+        <li>
+          <fieldset>
+            <legend>Attempt Type (Choose one):</legend>
+            <div class="radio-group">
+              <div class="radio-item">
+                <label for="onsight">
+                  <input type="radio" id="onsight" name="attemptType" value="onsight">
+                  Onsight
+                </label>
+              </div>
+              <div class="radio-item">
+                <label for="flash">
+                  <input type="radio" id="flash" name="attemptType" value="flash">
+                  Flash
+                </label>
+              </div>
+              <div class="radio-item attempts-row">
+                <label for="multiple">
+                  <input type="radio" id="multiple" name="attemptType" value="multiple">
+                  Multiple Attempts
+                </label>
+                <input type="number" id="numTries" name="numTries" min="1" placeholder="Number of Attempts" disabled>
+              </div>
+            </div>
+          </fieldset>
+        </li>
+
+        <!-- Proposed Grade -->
+        <li>
+          <label for="proposedGrade">Proposed Grade:</label>
+          <input type="text" id="proposedGrade" name="proposedGrade" placeholder="e.g., V5" required>
+        </li>
+
+        <!-- Type of Climb -->
+        <li>
+          <label>Type of Climb (select all that apply):</label>
+          <div class="checkbox-group">
+            <div class="checkbox-item">
+              <label>
+                <input type="checkbox" id="indoor" name="climbType[]" value="Indoor">
+                Indoor
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <input type="checkbox" id="outdoor" name="climbType[]" value="Outdoor">
+                Outdoor
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <input type="checkbox" id="bouldering" name="climbType[]" value="Bouldering">
+                Bouldering
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <input type="checkbox" id="sport" name="climbType[]" value="Sport">
+                Sport
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <input type="checkbox" id="trad" name="climbType[]" value="Trad">
+                Trad
+              </label>
+            </div>
+          </div>
+        </li>
+
+        <!-- Rock Type Menu -->
+        <li>
+          <label for="rockType">Rock Type:</label>
+          <select id="rockType" name="rockType">
+            <option value="">--Select Rock Type--</option>
+            <option value="granite">Granite</option>
+            <option value="sandstone">Sandstone</option>
+            <option value="limestone">Limestone</option>
+            <option value="other">Other</option>
+          </select>
+        </li>
+
+        <!-- Additional Comments -->
+        <li>
+          <label for="comments">Additional Comments:</label>
+          <textarea id="comments" name="comments" rows="4" cols="60" maxlength="400" placeholder="Any extra details about your climb..."></textarea>
+        </li>
+      </ul>
+    </fieldset>
+
+    <!-- Form Buttons -->
+    <p>
+      <input type="submit" value="Submit Climb">
+      <input type="reset" value="Reset Form">
+    </p>
+  </form>
+
+</body>
+</html>

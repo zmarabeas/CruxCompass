@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crux Compass Gallery</title>
+  <style>
+    body {
+      margin: 0 10%;
+      font-family: sans-serif;
+      background-color: #E5E3CF;
+    }
+    h1 {
+      text-align: center;
+      font-family: serif;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin-top: 30px;
+    }
+    p.description {
+      text-align: center;
+      font-size: 1em;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 4px solid #69876f;
+    }
+    figure {
+      margin: 40px auto;
+      text-align: center;
+      border-bottom: 1px solid #ccc; 
+    }
+    figure figcaption {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #333;
+    }
+    figure figcaption h3 {
+      margin: 0.5em 0 0.2em;
+      font-size: 1.1em;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Gallery Title and Description -->
+  <h1>Crux Compass Gallery</h1>
+  <p class="description">
+    Celebrating epic new sends by top climbers. Explore our latest images capturing the intensity and artistry of climbing.
+  </p>
+  
+  <figure>
+    <h3>Return of the Sleepwalker</h3>
+    <picture>
+      <source media="(min-width: 480px)"
+              srcset="images/bosi-1200.png 1200w, images/bosi-800.png 800w"
+              sizes="80vw">
+      <img src="images/bosi-400.png" alt="Will Bosi climbing on Return of the Sleepwalker">
+    </picture>
+    <figcaption>
+      <p>Will Bosi pushes the limits on his new send, putting a third V17 on his tick list.</p>
+    </figcaption>
+  </figure>
+  
+  <figure>
+    <h3>Flashing Belly Full of Bad Berries</h3>
+    <picture>
+      <source media="(min-width: 480px)"
+              srcset="images/whittaker-1200.png 1200w, images/whittaker-800.png 800w"
+              sizes="80vw">
+      <img src="images/whittaker-400.png" alt="Pete Whittaker climbing on Flashing Belly Full of Bad Berries">
+    </picture>
+    <figcaption>
+      <p>Pete Whittaker defies gravity and sends the grueling 5.13a on his first try.</p>
+    </figcaption>
+  </figure>
+  
+</body>
+</html>

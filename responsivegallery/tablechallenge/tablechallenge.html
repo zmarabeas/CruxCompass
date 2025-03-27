@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Climbing Grade Conversions</title>
+  <style>
+    td, th {
+      border: 1px solid #CCC;
+      padding: 5px;
+      text-align: center;
+    }
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Climbing Grade Conversions</caption>
+    <!-- Define column groups: first column for YDS (header) and the next three for conversion data -->
+    <colgroup span="1"></colgroup>
+    <colgroup span="3"></colgroup>
+    
+    <!-- Top row: first cell spans two rows; second cell spans two columns; fourth cell spans two rows -->
+    <thead>
+      <tr>
+        <th rowspan="2" scope="col">YDS</th>
+        <th colspan="2">Sport Climbing</th>
+        <th rowspan="2" scope="col">Trad (British)</th>
+      </tr>
+      <tr>
+        <!-- Subheaders for Sport Climbing conversion -->
+        <th scope="col">French</th>
+        <th scope="col">British</th>
+      </tr>
+    </thead>
+    
+    <!-- Table body with three data rows -->
+    <tbody>
+      <tr>
+        <th scope="row">5.10a</th>
+        <td>6a</td>
+        <td>Moderate</td>
+        <td>VS 4b</td>
+      </tr>
+      <tr>
+        <th scope="row">5.11b</th>
+        <td>6c</td>
+        <td>HVS</td>
+        <td>S 4c</td>
+      </tr>
+      <tr>
+        <th scope="row">5.12a</th>
+        <td>7a</td>
+        <td>E1</td>
+        <td>VS 4c</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

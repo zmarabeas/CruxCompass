@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Crux Compass</title>
+
+  <!-- 12.1 import fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+<style>
+  @import url('homestyles.css');
+</style>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1> <img src='images/logo.png' alt='logo' style="width: 100px;height:100px;"> <br>Crux Compass </h1>
+      <!-- 16.1 add navigation using an unordered list -->
+      <nav>
+        <ul>
+          <a href=index.html><li>Home</li></a>
+          <a href="crux_news.html"><li>News</li></a>
+          <a href="responsivegallery/responsivegallery.html"><li>Gallary</li></a>
+          <a href="route.html"><li>Submit your send!</li></a>
+        </ul>
+      </nav>
+      <div class="divider"></div>
+    </header>
+
+  <div class='content'>
+    <div class=description>
+      <h2> The Climbing Hub </h2>
+      <p>
+        Crux Compass is your <em>ultimate</em> resource for climbing enthusiasts. From the latest sends on iconic routes to tailored recommendations for the best climbs around the world, we’re here to inspire and guide your climbing journey. Whether you're scaling a boulder, tackling a gym problem, or ascending a towering crag, we’ve got you covered.
+      </p>
+
+      <h2> Climbs and Routes </h2>
+      <p>
+        Discover the newest climbs sent by the global climbing community. Explore details about where to find them, who sent them, and their origin stories.
+      </p>
+
+      <p>
+        One of the most groundbreaking ascents recently was Will Bosi’s send of <cite>Burden of Dreams</cite> <strong>(V17)</strong> in Finland. In an interview, Bosi described it as <q>one of the hardest things I’ve ever done</q>. His ascent makes him one of the few climbers to complete this legendary boulder problem.
+      </p>
+
+      <h2 class="climb-submit"> <a href="route.html"> Submit your own climb!</a> </h2>
+    </div>
+
+
+    <div class=destinations>
+      <h2> Climbing Destinations </h2>
+      <p>
+        <ul>
+          <li><strong>Yosemite</strong> - The birthplace of big-wall climbing</li>
+          <li><strong>Red River Gorge</strong> - Kentucky's sandstone pump fest</li>
+          <li><strong>Red Rocks</strong> - World class multi-pitch and sport climbing</li>
+          <li><strong>Indian Creek</strong> - The mecha of crack climbing</li>
+          <li><strong>Fontainebleau</strong> - Legendary sandstone bouldering</li>
+        </ul>
+      </p>
+
+      <figure>
+        <img src="images/pete-whittaker-indian-creek.jpg" alt="Pete Whittaker on Stranger than Fiction" style="width: 40vw; height: auto;">
+        <figcaption style="color: grey; font-size: .7rem;">Indian Creek crack climbing: Pete Whittaker on Stranger than Fiction 5.14b</figcaption>
+      </figure>
+    </div>
+
+    <h2> Climbing Terminology </h2>
+    <p>
+      Climbing has a rich vocabulary that varies by region. Here are a few key terms:
+    </p>
+    <dl>
+      <dt><dfn><i>Crux</i></dfn></dt>
+      <dd>The hardest move or sequence on a climb.</dd>
+
+      <dt><dfn><i>Beta</i></dfn></dt>
+      <dd>Climbing information or advice about a route, often shared by other climbers.</dd>
+
+      <dt><dfn><i>Rotpunkt</i></dfn></dt>
+      <dd>A German term meaning "redpoint," referring to climbing a route cleanly from the ground without falls after practicing it.</dd>
+    </dl>
+
+    <div class="find-climbing">
+      <h2> Find Climbing Nearby </h2>
+      <p>
+        Search for climbing opportunities wherever you are <br><strong>&emsp; gyms</strong><br><strong>&emsp; crags</strong><br><strong>&emsp; boulders</strong><br>
+      </p>
+    </div>
+
+    <div class="safety">
+      <h2> Climbing Safety </h2>
+      <p>
+        <small>Warning:</small> Climbing is dangerous. <b>Always use proper safety gear</b> and be aware of route conditions before attempting a climb.
+        <img src="images/grigri.png" alt="Petzl Grigri" >
+        <blockquote>
+          <p><q>What is this? Some kind of safety device?</q> – <cite>Alex Honnold</cite> <em class=location>- Yosemite Climber</em></p>
+        </blockquote>
+          <video width="320" height="262" controls autoplay muted>
+            <source src="images/alex-grip-strength.mp4" type="video/mp4">
+            Sorry, your browser doesn't support HTML5 video.
+          </video>
+      </p>
+    </div>
+
+
+    <div class=events-container>
+      <h2 class="events"> Upcoming Events </h2>
+      <p id=event>
+        Join our next climbing trip on <time datetime="2025-04-15">April 15, 2025</time> to <b>Red River Gorge!</b> Sign up now to experience some of the best climbing in the world.
+      </p>
+      <p id=event>
+        Join our upcoming climbing trip on <time datetime="2025-07-20">July 20, 2025</time> to <b>New River Gorge!</b> Sign up now to see some of the prettiest views while climbing! 
+      </p>
+    </div>
+  </div>
+    <!-- 16.2 add a menu flex container with climbing destinations -->
+    <div id=menu>
+        <section class=menu-title>
+          <h1>Epic Climbing Destinations</h1>
+        </section>
+        <section class="climb-section">
+            <h2 class="climb-title">El Capitan</h2>
+            <p>The iconic 3,000-foot granite monolith that defines big wall climbing</p>
+            <img src="images/destination.jpg" alt="El Capitan in Yosemite" class="climb-image">
+            <div class="climb-location">Yosemite National Park, California, USA</div>
+        </section>
+        
+        <section class="climb-section">
+            <h2 class="climb-title">Ceüse</h2>
+            <p>A limestone paradise featuring some of the most aesthetic and technical sport routes in the world</p>
+            <img src="images/destination.jpg" alt="Ceüse climbing area" class="climb-image">
+            <div class="climb-location">Near Gap, Hautes-Alpes, France</div>
+        </section>
+        
+        <section class="climb-section">
+            <h2 class="climb-title">Kalymnos</h2>
+            <p>A sport climbing paradise featuring tufas, stalactites, and overhanging caves on perfect limestone</p>
+            <img src="images/destination.jpg" alt="Kalymnos climbing" class="climb-image">
+            <div class="climb-location">Kalymnos Island, Greece</div>
+        </section>
+        
+        <section class="climb-section">
+            <h2 class="climb-title">Siurana</h2>
+            <p>Historic climbing area with crimpy, technical routes on red and orange conglomerate rock</p>
+            <img src="images/destination.jpg" alt="Siurana climbing area" class="climb-image">
+            <div class="climb-location">Catalonia, Spain</div>
+        </section>
+        
+        <section class="climb-section">
+            <h2 class="climb-title">The Grampians</h2>
+            <p>A bouldering and traditional climbing mecca with unique sandstone formations</p>
+            <img src="images/destination.jpg" alt="Grampians climbing" class="climb-image">
+            <div class="climb-location">Victoria, Australia</div>
+        </section>
+        
+        <section class="climb-section">
+            <h2 class="climb-title">Rocklands</h2>
+            <p>A world-class bouldering destination with thousands of problems on vibrant orange and red sandstone</p>
+            <img src="images/destination.jpg" alt="Rocklands bouldering" class="climb-image">
+            <div class="climb-location">Cederberg, South Africa</div>
+        </section>
+    </div>
+
+    <!-- Table Challenge - 8-4 -->
+    <div class="grades">
+      <table>
+        <caption>Climbing Grade Conversions</caption>
+        
+        <thead>
+          <tr>
+            <th colspan="4">Sport Climbing Grades</th>
+          </tr>
+          <tr>
+            <th scope="col">YDS (USA)</th>
+            <th scope="col">French</th>
+            <th scope="col">UIAA</th>
+            <th scope="col">British UK</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td scope="row">5.9-</td>
+            <td>5c</td>
+            <td>VI</td>
+            <td>HVS 4c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.9</td>
+            <td>5c</td>
+            <td>VI</td>
+            <td>HVS 5a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.9+</td>
+            <td>5c</td>
+            <td>VI</td>
+            <td>E1 5a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.10-</td>
+            <td>6a</td>
+            <td>VI+</td>
+            <td>E1 5a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.10a</td>
+            <td>6a</td>
+            <td>VI+</td>
+            <td>E1 5a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.10a/b</td>
+            <td>6a+</td>
+            <td>VI+</td>
+            <td>E2 5b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.10b</td>
+            <td>6a+</td>
+            <td>VII-</td>
+            <td>E2 5b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.10</td>
+            <td>6b</td>
+            <td>VII-</td>
+            <td>E2 5b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.10b/c</td>
+            <td>6b</td>
+            <td>VII</td>
+            <td>E2 5b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.10c</td>
+            <td>6b</td>
+            <td>VII</td>
+            <td>E2 5b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.10+</td>
+            <td>6b+</td>
+            <td>VII+</td>
+            <td>E3 5b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.10c/d</td>
+            <td>6b+</td>
+            <td>VII+</td>
+            <td>E3 5b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.10d</td>
+            <td>6b+</td>
+            <td>VII+</td>
+            <td>E3 5b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.11-</td>
+            <td>6c</td>
+            <td>VII+</td>
+            <td>E3 5c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.11a</td>
+            <td>6c</td>
+            <td>VII+</td>
+            <td>E3 5c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.11a/b</td>
+            <td>6c</td>
+            <td>VIII-</td>
+            <td>E3 5c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.11b</td>
+            <td>6c</td>
+            <td>VIII-</td>
+            <td>E3 5c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.11</td>
+            <td>6c+</td>
+            <td>VIII-</td>
+            <td>E4 5c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.11b/c</td>
+            <td>6c+</td>
+            <td>VIII-</td>
+            <td>E4 6a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.11c</td>
+            <td>6c+</td>
+            <td>VIII-</td>
+            <td>E4 6a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.11+</td>
+            <td>7a</td>
+            <td>VIII</td>
+            <td>E4 6a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.11c/d</td>
+            <td>7a</td>
+            <td>VIII</td>
+            <td>E4 6a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.11d</td>
+            <td>7a</td>
+            <td>VIII</td>
+            <td>E5 6a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.12-</td>
+            <td>7a+</td>
+            <td>VIII+</td>
+            <td>E5 6a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.12a</td>
+            <td>7a+</td>
+            <td>VIII+</td>
+            <td>E5 6a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.12a/b</td>
+            <td>7b</td>
+            <td>VIII+</td>
+            <td>E5 6a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.12b</td>
+            <td>7b</td>
+            <td>VIII+</td>
+            <td>E5 6b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.12</td>
+            <td>7b+</td>
+            <td>VIII+</td>
+            <td>E6 6b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.12b/c</td>
+            <td>7b+</td>
+            <td>IX-</td>
+            <td>E6 6b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.12c</td>
+            <td>7b+</td>
+            <td>IX-</td>
+            <td>E6 6b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.12+</td>
+            <td>7c</td>
+            <td>IX</td>
+            <td>E6 6b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.12c/d</td>
+            <td>7c</td>
+            <td>IX</td>
+            <td>E6 6b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.12d</td>
+            <td>7c</td>
+            <td>IX</td>
+            <td>E6 6b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.13-</td>
+            <td>7c+</td>
+            <td>IX+</td>
+            <td>E7 6c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.13a</td>
+            <td>7c+</td>
+            <td>IX+</td>
+            <td>E6 6c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.13a/b</td>
+            <td>8a</td>
+            <td>IX+</td>
+            <td>E7 6c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.13b</td>
+            <td>8a</td>
+            <td>IX+</td>
+            <td>E7 6c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.13</td>
+            <td>8a</td>
+            <td>X-</td>
+            <td>E7 6c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.13b/c</td>
+            <td>8a+</td>
+            <td>X-</td>
+            <td>E7 6c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.13c</td>
+            <td>8a+</td>
+            <td>X-</td>
+            <td>E7 7a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.13+</td>
+            <td>8b</td>
+            <td>X-</td>
+            <td>E7 7a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.13c/d</td>
+            <td>8b</td>
+            <td>X</td>
+            <td>E8 7a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.13d</td>
+            <td>8b</td>
+            <td>X</td>
+            <td>E8 7a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.14-</td>
+            <td>8b+</td>
+            <td>X+</td>
+            <td>E8 7a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.14a</td>
+            <td>8b+</td>
+            <td>X+</td>
+            <td>E8 7a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.14a/b</td>
+            <td>8c</td>
+            <td>X+</td>
+            <td>E9 7b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.14b</td>
+            <td>8c</td>
+            <td>X+</td>
+            <td>E9 7b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.14</td>
+            <td>8c+</td>
+            <td>XI-</td>
+            <td>E9 7b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.14b/c</td>
+            <td>8c+</td>
+            <td>XI-</td>
+            <td>E9 7b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.14c</td>
+            <td>8c+</td>
+            <td>XI-</td>
+            <td>E9 7b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.14+</td>
+            <td>9a</td>
+            <td>XI</td>
+            <td>E10 7b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.14c/d</td>
+            <td>9a</td>
+            <td>XI</td>
+            <td>E10 7b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.14d</td>
+            <td>9a</td>
+            <td>XI</td>
+            <td>E10 7c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.15-</td>
+            <td>9a+</td>
+            <td>XI+</td>
+            <td>E11 7c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.15a</td>
+            <td>9a+</td>
+            <td>XI+</td>
+            <td>E11 7c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.15a/b</td>
+            <td>9a+</td>
+            <td>XII-</td>
+            <td>E11 7c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.15b</td>
+            <td>9b</td>
+            <td>XII-</td>
+            <td>E11 8a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.15</td>
+            <td>9b</td>
+            <td>XII</td>
+            <td>E11 8a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.15c</td>
+            <td>9b+</td>
+            <td>XII</td>
+            <td>E11 8a</td>
+          </tr>
+          <tr>
+            <td scope="row">5.15+</td>
+            <td>9b+</td>
+            <td>XII+</td>
+            <td>E11 8b</td>
+          </tr>
+          <tr>
+            <td scope="row">5.15c/d</td>
+            <td>9c</td>
+            <td>XIII-</td>
+            <td>E11 8c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.15d</td>
+            <td>9c</td>
+            <td>XIII-</td>
+            <td>E11 8c</td>
+          </tr>
+          <tr>
+            <td scope="row">5.16a</td>
+            <td>9c+</td>
+            <td>XIII</td>
+            <td>E12 8c</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <footer>
+      <blockquote>
+        <p><q>It goes, boys</q> – <cite>Lynn Hill</cite></p>
+      </blockquote>
+      <h2> Crux Compass 2025 </h2>
+    </footer>
+
+  </div>
+</body>
+
+</html>

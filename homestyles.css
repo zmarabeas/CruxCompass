@@ -1,0 +1,354 @@
+
+  
+  /* 14.1 set box model for easier sizing */
+  html {
+    box-sizing: border-box; 
+  }
+  * {
+    box-sizing: inherit; 
+  }
+
+  header {
+    margin: 0;
+    color: white; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    /* 13.3 add repeating header image */
+    /* background-image: url('images/caribiner.png');
+    background-repeat: repeat-x;
+    background-repeat: space; */
+
+    /* 13.7 multiple images */
+    /* background: */
+    /*   url(images/caribiner.png) left top repeat-y, */
+    /*   url(images/caribiner.png) right top repeat-y, */
+    /*   url(images/bg-image-transparent.png) 90% bottom no-repeat; */
+  }
+
+  body {
+    background-color: #E5E3CF; 
+    font-family: sans-serif;
+    font-size: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* 13.2 add background image */
+    /* background-image: url('images/bg-image-transparent.png'); */
+    background-repeat: space;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    background-color: #E5E3CF; 
+    margin: 0 9%;
+
+    /* 14.1 add padding */
+    padding: 2em;
+  }
+
+  .divider {
+    border-top: 1px solid #69876f; 
+    margin: 20px 0;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase; 
+    color: black;
+
+    /* 12.1 add font */
+    font-family: "Russo One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    /* 12.2 set font size */
+    font-size: 1.5em;
+  }
+  h2 {
+    color: #69876f;
+    /* 12.2 set font size */
+    font-size: 1em;
+  }
+
+  /* 14.2 add borders */
+  .events {
+    border-left: 4px solid #69876f;
+    border-top: 2px solid #69876f;
+    padding-left: .5em;
+  }
+
+  td, th {
+    border: 1px solid #CCC;
+    padding: 5px;
+    text-align: center;
+  }
+  table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+
+
+  /* 16.2 add styles for flex menu */
+  #menu {
+    border: 3px solid #69876f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .menu-title{
+    background-color: #69876f;
+    color: white;
+    justify-content: center;
+  }
+
+  .menu-title h1{
+    color: white;
+  }
+
+  /* 16.2 add styles for flex menu sections */
+  #menu section{
+    border: 1px solid #69876f;
+    padding: 10px;
+    margin: 10px;
+    min-width: 240px;
+    max-width: 240px;
+    height: 350px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #menu p {
+    margin: 0;
+  }
+
+  #menu img {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* 16.2 move the location to the bottom of the section flex-box */
+  .climb-location {
+    margin-top: auto;
+  }
+
+  .climb-location:before {
+    content: "📍";
+    margin-right: .5em;
+  }
+
+
+  /* 16.1 Add styles for nav bar using flex and block display*/
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    display: block;
+    border: 1px solid #69876f;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: 0 .5em;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #69876f;
+  }
+
+  nav a:visited {
+    color: #69876f;
+  }
+
+  /* 12.5 add selection styles */
+  .location{
+    font-size: .8rem;
+    color: grey;
+  }
+
+  #event{
+    background-color: #69876f;
+    color: white;
+    margin: 20px 0;
+    /* 14.2 add borders */
+    border: 3px solid white;
+    padding: 10px;
+  }
+
+  /* 13.1 add colors to links */
+  a{
+    color: #876981;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: #b25fa1;
+    text-decoration: underline;
+  }
+
+  a:visited{
+    color: #b25fa1;
+  }
+
+  /* 14.3 add margins */
+  p, dl{
+    margin-left: 2em;
+  }
+
+  .climb-submit{
+    margin-left: 4em;
+  }
+
+
+  /* 14.4 float images */
+  img[src*="pete-whittaker-indian-creek.jpg"]{
+    margin-left: 2em;
+    margin-top: 2em
+  }
+
+  figcaption {
+    margin-top: .5em;
+  }
+
+  .grades {
+    background-color: #E5E3CF;
+    padding: 1em;
+  }
+
+  /* 15.2 add shape outside images */
+  img[src*="images/grigri.png"]{
+    width: 140px; 
+    height: auto; 
+    float: right;
+    -webkit-shape-outside: circle(140px); 
+    shape-outside: circle(140px);
+    margin-right: 5em;
+  }
+
+  footer {
+    display: flex;
+    background-color: #69876f;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: .5em;
+  }
+
+  footer blockquote {
+    font-size: 2.7em;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  footer h2 {
+    font-size: 1em;
+    margin-left: 1em;
+    color: white;
+    text-align: left;
+  }
+
+  /* 17.1 responsive styles for smaller screens */
+  /* 780px width */
+  @media screen and (max-width: 780px) {
+    #menu {
+      justify-content: center;
+    }
+
+    #menu section {
+      max-width: 300px;
+    }
+
+    nav ul {
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+
+    p, dl {
+      margin-left: 0;
+    }
+
+    .climb-submit {
+      margin-left: 0;
+    }
+
+    footer blockquote {
+      font-size: 2em;
+    }
+  }
+
+  /* 480px width */
+  @media screen and (max-width: 480px) {
+    nav ul {
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    #menu section {
+      max-width: 240px;
+    }
+
+    footer blockquote {
+      font-size: 1.2em;
+    }
+  }
+
+  /* full-width: multiple columns and arrange in a grid */
+  @media screen and (min-width: 940px) {
+    #container {
+      display: grid;
+      grid-template-areas: 
+        "header header"
+        "content grades"
+        "menu menu"
+        "footer footer";
+      margin: 0 auto;
+      padding: 3em;
+      position: relative;
+    }
+
+    header {
+      grid-area: header;
+    }
+
+    .content {
+      grid-area: content;
+      margin: 0;
+    }
+
+    .grades {
+      grid-area: grades;
+      margin-top: 2em;
+    }
+
+    #menu {
+      grid-area: menu;
+      justify-content: center;
+    }
+
+
+    footer {
+      grid-area: footer;
+    }
+
+  }
+
